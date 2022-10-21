@@ -78,11 +78,14 @@ interface ClusterScript {
   subNode: (objectName: string) => SubNode
 }
 
+type CompatGimmickTarget = 'this' | 'owner' | 'global'
+type CompatParamType = 'signal' | 'boolean' | 'float' | 'double' | 'integer' | 'vector2' | 'vector3'
+type CompatSendable = boolean | number | Vector2 | Vector3
+type CompatStateTarget = 'this' | 'owner'
+type Sendable = boolean | number | string | Vector2 | Vector3 | Quaternion | null
 interface StateProxy {
   [propName: string]: Sendable
 }
-
-type Sendable = boolean | number | string | Vector2 | Vector3 | Quaternion | null
 
 /**
  * 2Dベクトルです。
