@@ -94,6 +94,97 @@ class Vector2 {
   constructor(x?: number, y?: number)
   readonly x: number
   readonly y: number
+
+  /**
+   * vの値を自身に加算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#add
+   */
+  add(v: Vector2): Vector2
+  /**
+   * スカラー値sを自身のx, y成分に加算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#addScalar
+   */
+  addScalar(s: number): Vector2
+  /**
+   * インスタンスを複製します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#clone
+   */
+  clone(): Vector2
+  /**
+   * 自身とvのベクトルの2Dの外積の大きさを計算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#cross
+   */
+  cross(v: Vector2): number
+  /**
+   * vの値で自身を除算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#divide
+   */
+  divide(v: Vector2): Vector2
+  /**
+   * スカラー値sで自身を乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#divideScalar
+   */
+  divideScalar(s: number): Vector2
+  /**
+   * 自身とvのベクトルの内積を計算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#dot
+   */
+  dot(v: Vector2): number
+  /**
+   * 自身の値とvを比較し、ほとんど等しいときにtrueを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#equals
+   */
+  equals(v: Vector2): boolean
+  /**
+   * 自身（ベクトル）の長さを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#length
+   */
+  length(): number
+  /**
+   * 自身（ベクトル）の2乗の長さを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#lengthSq
+   */
+  lengthSq(): number
+  /**
+   * 自身 と v の間を a で線形に補間した値を計算し、計算結果で自身の値を更新します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#lerp
+   */
+  lerp(v: Vector2, a: number): Vector2
+  /**
+   * vの値を自身に乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#multiply
+   */
+  multiply(v: Vector2): Vector2
+  /**
+   * スカラー値sを自身に乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#multiplyScalar
+   */
+  multiplyScalar(s: number): Vector2
+  /**
+   * 自身の値を反転します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#negate
+   */
+  negate(): Vector2
+  /**
+   * 自身の値を正規化します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#normalize
+   */
+  normalize(): Vector2
+  /**
+   * 自身のx, y成分の値を設定します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#set
+   */
+  set(x: number, y: number): Vector2
+  /**
+   * vの値で自身から減算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#sub
+   */
+  sub(v: Vector2): Vector2
+  /**
+   * スカラー値sで自身のx, y成分を減算します。
+   * @link https://docs.cluster.mu/script/classes/Vector2.html#subScalar
+   */
+  subScalar(s: number): Vector2
 }
 
 /**
