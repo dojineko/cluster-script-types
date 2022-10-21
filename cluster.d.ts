@@ -198,6 +198,102 @@ class Vector3 {
   readonly x: number
   readonly y: number
   readonly z: number
+
+  /**
+   * vの値を自身に加算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#add
+   */
+  add(v: Vector3): Vector3
+  /**
+   * スカラー値sを自身のx, y, z成分に加算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#addScalar
+   */
+  addScalar(s: number): Vector3
+  /**
+   * qの回転を自身に適用します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#applyQuaternion
+   */
+  applyQuaternion(q: Quaternion): Vector3
+  /**
+   * インスタンスを複製します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#clone
+   */
+  clone(): Vector3
+  /**
+   * 自身とvのベクトルの外積を計算し、計算結果で自身の値を更新します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#cross
+   */
+  cross(v: Vector3): Vector3
+  /**
+   * vの値で自身を除算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#divide
+   */
+  divide(v: Vector3): Vector3
+  /**
+   * スカラー値sで自身を乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#divideScalar
+   */
+  divideScalar(s: number): Vector3
+  /**
+   * 自身とvのベクトルの内積を計算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#dot
+   */
+  dot(v: Vector3): number
+  /**
+   * 自身の値とvを比較し、ほとんど等しいときにtrueを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#equals
+   */
+  equals(v: Vector3): boolean
+  /**
+   * 自身（ベクトル）の長さを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#length
+   */
+  length(): number
+  /**
+   * 自身（ベクトル）の2乗の長さを返します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#lengthSq
+   */
+  lengthSq(): number
+  /**
+   * 自身 と v の間を a で線形に補間した値を計算し、計算結果で自身の値を更新します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#lerp
+   */
+  lerp(v: Vector3, a: number): Vector3
+  /**
+   * vの値を自身に乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#multiply
+   */
+  multiply(v: Vector3): Vector3
+  /**
+   * スカラー値sを自身に乗算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#multiplyScalar
+   */
+  multiplyScalar(s: number): Vector3
+  /**
+   * 自身の値を反転します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#negate
+   */
+  negate(): Vector3
+  /**
+   * 自身の値を正規化します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#normalize
+   */
+  normalize(): Vector3
+  /**
+   * 自身のx, y, z成分の値を設定します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#set
+   */
+  set(x: number, y: number, z: number): Vector3
+  /**
+   * vの値で自身から減算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#sub
+   */
+  sub(v: Vector3): Vector3
+  /**
+   * スカラー値sで自身のx, y, z成分を減算します。
+   * @link https://docs.cluster.mu/script/classes/Vector3.html#subScalar
+   */
+  subScalar(s: number): Vector3
 }
 
 class Quaternion {
