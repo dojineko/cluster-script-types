@@ -116,7 +116,7 @@ interface StateProxy {
  */
 declare class Vector2 {
   /** @link https://docs.cluster.mu/script/classes/Vector2.html#constructor */
-  constructor(x?: number, y?: number)
+  constructor(x: number, y: number)
   readonly x: number
   readonly y: number
 
@@ -219,7 +219,7 @@ declare class Vector2 {
  */
 declare class Vector3 {
   /** @link https://docs.cluster.mu/script/classes/Vector3.html#constructor */
-  constructor(x?: number, y?: number, z?: number)
+  constructor(x: number, y: number, z: number)
   readonly x: number
   readonly y: number
   readonly z: number
@@ -327,7 +327,7 @@ declare class Vector3 {
  * @link https://docs.cluster.mu/script/classes/Quaternion.html
  */
 declare class Quaternion {
-  constructor(x?: number, y?: number, z?: number, w?: number)
+  constructor(x: number, y: number, z: number, w: number)
   readonly w: number
   readonly x: number
   readonly y: number
