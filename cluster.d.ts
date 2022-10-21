@@ -1,5 +1,9 @@
 declare var $: ClusterScript
 
+/**
+ * Scriptで動作する個々のアイテムを操作するハンドルです。
+ * @link https://docs.cluster.mu/script/interfaces/ClusterScript.html
+ */
 interface ClusterScript {
   /**
    * アイテムごとのstateへのアクセスを提供します。 read/writeアクセスが可能です。stateのプロパティへのアクセスにより、そのプロパティ名をkeyとしてstateへアクセスすることができます。
@@ -78,11 +82,29 @@ interface ClusterScript {
   subNode: (objectName: string) => SubNode
 }
 
+/**
+ * @link https://docs.cluster.mu/script/types/CompatGimmickTarget.html
+ */
 type CompatGimmickTarget = 'this' | 'owner' | 'global'
+/**
+ * @link https://docs.cluster.mu/script/types/CompatParamType.html
+ */
 type CompatParamType = 'signal' | 'boolean' | 'float' | 'double' | 'integer' | 'vector2' | 'vector3'
+/**
+ * @link https://docs.cluster.mu/script/types/CompatSendable.html
+ */
 type CompatSendable = boolean | number | Vector2 | Vector3
+/**
+ * @link https://docs.cluster.mu/script/types/CompatStateTarget.html
+ */
 type CompatStateTarget = 'this' | 'owner'
+/**
+ * @link https://docs.cluster.mu/script/types/Sendable.html
+ */
 type Sendable = boolean | number | string | Vector2 | Vector3 | Quaternion | null
+/**
+ * @link https://docs.cluster.mu/script/types/StateProxy.html
+ */
 interface StateProxy {
   [propName: string]: Sendable
 }
@@ -299,6 +321,11 @@ declare class Vector3 {
   subScalar(s: number): Vector3
 }
 
+/**
+ * クォータニオンです。
+ * 値を操作するメソッドは基本的に破壊的操作であるため、影響を与えたくない場合は明示的にclone()を呼び出してインスタンスを複製してください。
+ * @link https://docs.cluster.mu/script/classes/Quaternion.html
+ */
 declare class Quaternion {
   constructor(x?: number, y?: number, z?: number, w?: number)
   readonly w: number
@@ -379,6 +406,7 @@ declare class Quaternion {
 
 /**
  * アイテムの子要素のオブジェクトを操作するハンドルです。
+ * @link https://docs.cluster.mu/script/interfaces/SubNode.html
  */
 interface SubNode {
   /**
