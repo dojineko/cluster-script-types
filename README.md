@@ -1,5 +1,11 @@
 # cluster-script-types (Unofficial)
 
+## **DEPRECATED:** The official version is now available!
+
+Check it out 👉 https://www.npmjs.com/package/@clustervr/cluster-script-types
+
+----
+
 🤖 a Unofficial [Cluster Script](https://docs.cluster.mu/script/index.html) type definitions for [TypeScript](https://www.typescriptlang.org/).
 
 (非公式な Cluster Script の TypeScript 向け型定義です)
